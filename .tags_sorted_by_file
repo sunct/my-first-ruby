@@ -1,0 +1,22 @@
+ApplicationCable	app\channels\application_cable\channel.rb	/^module ApplicationCable$/;"	m
+Channel	app\channels\application_cable\channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+ApplicationCable	app\channels\application_cable\connection.rb	/^module ApplicationCable$/;"	m
+Connection	app\channels\application_cable\connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+ApplicationController	app\controllers\application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+WelcomeController	app\controllers\welcome_controller.rb	/^class WelcomeController < ApplicationController$/;"	c
+index	app\controllers\welcome_controller.rb	/^  def index$/;"	f	class:WelcomeController
+ApplicationHelper	app\helpers\application_helper.rb	/^module ApplicationHelper$/;"	m
+WelcomeHelper	app\helpers\welcome_helper.rb	/^module WelcomeHelper$/;"	m
+ApplicationJob	app\jobs\application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app\mailers\application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app\models\application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+Application	config\application.rb	/^  class Application < Rails::Application$/;"	c	class:Blog
+Blog	config\application.rb	/^module Blog$/;"	m
+WelcomeControllerTest	test\controllers\welcome_controller_test.rb	/^class WelcomeControllerTest < ActionDispatch::IntegrationTest$/;"	c
+ActiveSupport	test\test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
