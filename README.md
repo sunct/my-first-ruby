@@ -35,8 +35,16 @@ http://note.youdao.com/noteshare?id=d67b0d0f0c6bf5f973bb9d17b17e3b36&sub=390D663
 
 http://note.youdao.com/noteshare?id=f0503a08f6f37d75989dbbc684691f8d&sub=FA98F1683DFE4D9F9627AF33D797BED1
 
-* 三、Rails 项目入门
+* 三、Rails 项目入门（一）
 
 http://note.youdao.com/noteshare?id=c654f59c6e56c0dc37ca0360237e95aa&sub=25D4D7F2B9F442DE87B0831559219422
+
+* 四、Rails 项目入门（二）
+
+http://note.youdao.com/noteshare?id=a25a45abd88650623b11181678d115ac&sub=C3F40D048EE74140A9D122B061967EBE
+
+* 五、Rails 项目入门（三）
+
+http://note.youdao.com/noteshare?id=046dac054e4ad36b99cfdbe1c33cbaed&sub=B866986CEF2C4F5A8427E0FDF75CB105
 
 * （陆续更新中……）
