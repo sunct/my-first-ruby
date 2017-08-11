@@ -9,13 +9,16 @@
   </head>
 
   <body>
- 	<%= render 'layouts/header' %>
-   
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>
+    <div id="page">
+   	  <%= render 'layouts/header' %>
+     
+      <div class="container">
+        <%= yield %>
+       
+        
+      </div>
+       <%= render 'layouts/footer' %>
     </div>
-
   </body>
 
 </html>

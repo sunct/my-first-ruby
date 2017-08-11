@@ -1,12 +1,47 @@
- <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "my blog", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "首页",   '#' %></li>
-            <li><%= link_to "关于",   '#' %></li>
-            <li><%= link_to "登陆", '#' %></li>
-          </ul>
-        </nav>
+
+
+  <div class="fh5co-loader"></div>
+  
+
+  <nav class="fh5co-nav" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="top-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 text-left menu-1">
+                <ul>
+                  <li >
+                  <%= link_to 'Home',root_path%></li>
+                  <li class="has-dropdown">
+                  <%=link_to 'Mystyle', '#' %>
+                    <ul class="dropdown">
+                      <li><a href="#">Photo</a></li>
+                      <li><%=link_to 'Blog',myblogs_path%></li>
+                      <li><a href="#">Article</a></li>
+                    </ul>
+                  </li>
+                   <li><%= link_to 'About' , about_path %></li>
+                  
+                  <li><%=link_to "Connect",connect_path %></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <ul class="fh5co-social-icons">
+                  <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+      <div class="row">
+        <div class="col-xs-12 text-center menu-2">
+          
+        </div>
+      </div>
+    </div>
+  </nav>

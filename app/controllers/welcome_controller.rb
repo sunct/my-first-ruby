@@ -5,4 +5,7 @@ class WelcomeController < ApplicationController
   def about
   	
   end
+  def connect
+  	
+  end
 end

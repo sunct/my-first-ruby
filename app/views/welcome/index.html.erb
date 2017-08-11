@@ -1,15 +1,131 @@
 <% provide(:title, "首页") %>
-<div class="center jumbotron">
-	<h1>Hello, Rails!</h1>
-	<div>
-		<p>Hello ,my name is sunct</p>
-		<p>glad to meet you!</p>
-		<a href="https://github.com/sunct/my-first-ruby" target="_block">this is my git`s address</a>
+
+<aside id="fh5co-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="flexslider animate-box">
+						<ul class="slides">
+						<%  for i in 1..5 %>
+					   	<li style='background-image: url(images/img_bg_side_<%=i%>.jpg);'>
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-10 col-md-offset-1 slider-text">
+						   				<div class="slider-text-inner">
+						   					<h1>Not Every Project Needs To Be Perfect</h1>
+												
+												<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+					   	<% end %>
+					  	</ul>
+				  	</div>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="featured text-center animate-box" style="background-image: url(images/img_bg_3.jpg);">
+						<div class="desc">
+							<span class="date">Dec 25, 2017</span>
+							<h3>Every Start has an End</h3>
+						</div>
+					</a>
+					<a href="#" class="featured text-center animate-box" style="background-image: url(images/img_bg_2.jpg);">
+						<div class="desc">
+							<span class="date">Dec 25, 2017</span>
+							<h3>Most Beautiful Website in 2017</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<div id="fh5co-blog-popular">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+					<h2><span>Popular Post</span></h2>
+				</div>
+			</div>
+			<div class="row">
+			<% for i in 1..4%>
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a href="#"><img class="img-responsive"  style="min-height:200px;"src="images/blog_1_<%=i%>.jpg" alt=""></a>
+						<div class="blog-text">
+							<h3><a href="#">Conquer The World</a></h3>
+						</div> 
+					</div>
+				</div>
+			<%end%>
+			</div>
+		</div>
+	</div>
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+	<div id="fh5co-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-padded-right">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-blog animate-box">
+								<div class="title title-pin text-center">
+									<span class="posted-on">Nov. 15th 2017</span>
+									<h3><a href="#">Modeling &amp; Stylist in CHINA</a></h3>
+									<span class="category">Lifestyle</span>
+								</div>
+								<a href="#"><img class="img-responsive" src="images/blog_1.jpg" alt=""></a>
+								<div class="blog-text text-center">
+									<p>Flowers fade and fall and fly about up in the sky, But who pities the loss of your fragrance when you die?</p>
+									<ul class="fh5co-social-icons">
+										<li>Share:</li>
+										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+									</ul>
+								</div> 
+							</div>
+						</div>
+						<% for i in 2..5%>
+						<div class="col-md-3">
+							<div class="fh5co-blog animate-box">
+								<div class="title text-center">
+									<span class="posted-on">Nov. 15th 2017</span>
+									<h3><a href="#">Modeling &amp; Stylist in CHINA</a></h3>
+									<span class="category">Lifestyle</span>
+								</div>
+								<a href="#"><img class="img-responsive" style="min-height:200px;" src="images/blog_<%=i%>.jpg" alt=""></a>
+								<div class="blog-text text-center">
+									<p>Have faith in your dreams and someday, your rainbow will come smiling through.</p>
+								</div> 
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</div>
 
-	<%= link_to image_tag("logo.png", alt: "my logo"), '#' %>
-
-	<%= link_to 'User', controller: 'users' %>
-	<%= link_to 'about', welcome_about_path %>
-</div>
-
+	<div id="fh5co-instagram">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+					<h2><span>Instagram Posts</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<%for i in 1..4%>
+			<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
+				<div class="insta" style="background-image: url(images/insta_<%=i%>.jpg);"></div>
+			</div>
+			<%end%>
+		</div>
+	</div>
