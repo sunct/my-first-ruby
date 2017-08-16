@@ -1,0 +1,22 @@
+<% provide(:title, "Log in") %>
+<div class="account-container">
+	<div class="content clearfix">
+		<h1>Member Login</h1>	
+		<div class="login-fields">	
+			<%= form_for(:session, url: login_path) do |f| %>
+			<div class="field">
+				<%= f.label :email %>
+				<%= f.email_field :email, class: 'login username-field' %>
+			</div>
+			<div class="field">
+				<%= f.label :password %>
+				<%= f.password_field :password, class: 'login password-field' %>
+			</div>
+		</div>
+		<div class="login-actions">
+			<%= f.submit "Log in", class: "button btn btn-success btn-large" %>
+		</div>   
+		<% end %>
+		<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+	</div> <!-- /content -->
+</div> <!-- /account-container -->

@@ -1,5 +1,39 @@
-<h1>New User</h1>
+<% provide(:title, 'Sign up') %>
+<div class="account-container register">
+	
+	<div class="content clearfix">	
+		<h1>Signup for Free Account</h1>			
+			<%= form_for(@user) do |f| %>
+				<div class="login-fields">	
+					<div class="field">
+						<%= f.label :name %>
+	      				<%= f.text_field :name %>
+					</div> <!-- /field -->
+					
+					<div class="field">
+						 <%= f.label :email %>
+	     				 <%= f.email_field :email %>
+					</div> <!-- /field -->	
+					<div class="field">			
+	      				<%= f.label :password %>
+	      				<%= f.password_field :password %>
+					</div> <!-- /field -->
+					<div class="field">
+						<%= f.label :password_confirmation, "Confirmation" %>
+	      				<%= f.password_field :password_confirmation %>
 
-<%= render 'form', user: @user %>
+					</div> <!-- /field -->				
+				</div> <!-- /login-fields -->
+				
+				<div class="login-actions">					
+					 <%= f.submit "Create my account", class: "btn btn-primary" %>
+					
+				</div> <!-- .actions -->
+			<% end %>
+	
+		
+	</div> <!-- /content -->
+	
+</div> <!-- /account-container -->
 
 <%= link_to 'Back', users_path %>

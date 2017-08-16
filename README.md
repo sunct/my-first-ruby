@@ -41,12 +41,17 @@ Things you may want to cover:
 * <a href="http://note.youdao.com/noteshare?id=a25a45abd88650623b11181678d115ac&sub=C3F40D048EE74140A9D122B061967EBE"  target="_blank">四、Rails项目入门（二） 了解MVC</a>
 
 
-* <a href="http://note.youdao.com/noteshare?id=046dac054e4ad36b99cfdbe1c33cbaed&sub=B866986CEF2C4F5A8427E0FDF75CB105" target="_blank">五、Rails项目入门（三）给USER添加验证和查看数据库数据</a>
+* <a href="http://note.youdao.com/noteshare?id=046dac054e4ad36b99cfdbe1c33cbaed&sub=B866986CEF2C4F5A8427E0FDF75CB105" target="_blank">五、Rails项目入门（三）给USER添加验证以及查看数据库数据</a>
 
 * <a href="http://note.youdao.com/noteshare?id=38423727e6ded0993ddf83e325f02553&sub=65F0C28759F04297B017F3F6A83CD96B" target="_blank">六、Rails 项目入门（四）静态页面布局</a>
 
 * <a href="http://note.youdao.com/noteshare?id=fcd59d3f7add19bd9fa86ca84d28f446&sub=9635843B4F7344389332ECBA445609ED" target="_blank">七、Rails项目入门（五）引入第三方静态模板</a>
 
 * <a href="http://note.youdao.com/noteshare?id=3a597fc7cdf71e3e9ae33191ba55c424&sub=31A66764207A469EAB1BCEADA2BA722E" target="_blank">八、Rails项目入门（六）创建Myblog资源</a>
+
+
+* <a href="http://note.youdao.com/noteshare?id=f75ad932c25588aad4fa0ffd167795fd&sub=711BBA0B530540A6B9B268C7ED847EA6" target="_blank">九、Rails项目入门（七）用户登录注册等功能</a>
+
+
 
 * （陆续更新中……）
