@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :edit, :update]
+  before_action :correct_user,   only: [:edit, :update]
   http_basic_authenticate_with name: "sunct", password: "123456", except: [:index, :show]
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    # @users = User.all
+     @users = User.paginate(page: params[:page],per_page:1)
   end
 
   # GET /users/1
@@ -16,6 +19,7 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+    
   end
 
   # GET /users/1/edit
@@ -42,7 +46,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.update(user_params)
+      if @user.update_attributes(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
@@ -60,6 +64,22 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+   # 确保用户已登录
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = "Please log in."
+      redirect_to login_url
+    end
+  end
+
+  # 确保是正确的用户
+  def correct_user
+      @user = User.find(params[:id])
+      # redirect_to(root_url) unless @user == current_user
+      redirect_to(root_url) unless current_user?(@user)
   end
 
   private

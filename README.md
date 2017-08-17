@@ -49,9 +49,11 @@ Things you may want to cover:
 
 * <a href="http://note.youdao.com/noteshare?id=3a597fc7cdf71e3e9ae33191ba55c424&sub=31A66764207A469EAB1BCEADA2BA722E" target="_blank">八、Rails项目入门（六）创建Myblog资源</a>
 
-
 * <a href="http://note.youdao.com/noteshare?id=f75ad932c25588aad4fa0ffd167795fd&sub=711BBA0B530540A6B9B268C7ED847EA6" target="_blank">九、Rails项目入门（七）用户登录注册等功能</a>
 
+* <a href="http://note.youdao.com/noteshare?id=8871d32130ba2cc9fea43552ad088357&sub=CDF01D66B5D24826864A243404866F31" target="_blank">十、Rails项目入门（八）编辑等操作用户和权限控制</a>
+
+* <a href="http://note.youdao.com/noteshare?id=f56b9d67c52a432907cca8f29a8a170b&sub=6D63962EB48049459C8F6641F9EC45BE" target="_blank">十一、Rails 项目入门（九）分页 列出所有用户和删除</a>
 
 
 * （陆续更新中……）

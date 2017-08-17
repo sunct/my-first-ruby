@@ -13,7 +13,16 @@
 				<%= f.password_field :password, class: 'login password-field' %>
 			</div>
 		</div>
+
+							
 		<div class="login-actions">
+			<span class="login-checkbox">
+				<%= f.label :remember_me, class: "field login-checkbox" do %>
+		        <%= f.check_box :remember_me  %>
+		       <label class="choice" for="Field">Keep me signed in</label>
+		      	<% end %>
+			</span>
+	
 			<%= f.submit "Log in", class: "button btn btn-success btn-large" %>
 		</div>   
 		<% end %>

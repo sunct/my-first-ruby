@@ -30,6 +30,8 @@
                   <%=link_to 'Account', '#' %>
                     <ul class="dropdown">
                       <% if logged_in? %>
+                       <!-- 编辑资料 -->
+                    <li><%= link_to "Settings", edit_user_path(current_user) %></li>
                         <!-- 注销 -->
                        <li><%= link_to "Log out", logout_path, method: :delete %></li>
                       <% else %>

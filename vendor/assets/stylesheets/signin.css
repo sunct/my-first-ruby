@@ -9,7 +9,7 @@ Bootstrap Admin Template
 .account-container {
 	width: 380px; 
 	display: block;
-	margin: 60px auto 0 auto;
+	margin: 10px auto 0 auto;
 	
 	background: #f9f9f9;
 	
@@ -83,29 +83,26 @@ span.login-checkbox {
 	margin-top: 31px;
 }
 
-span.login-checkbox > input[type='checkbox'] {
+span.login-checkbox input[type='checkbox'] {
     opacity: 0;
     float: left;
     width: 15px;
+    margin-left:0px;
 }
 
-span.login-checkbox > input[type='checkbox'] + label {    
+span.login-checkbox  input[type='checkbox'] + label {    
     clear: none;
-    
 	height: 15px; 
 	display: block;
     padding: 0 0 0 22px;
     margin: 0;
-    
     font-size: 12px;
     line-height: 1.2em;
-    
-    /*background: url(../../images/signin/check.png) no-repeat 0 0;*/
-    
+    background: url(/images/signin/check.png) no-repeat 0 0;
     cursor: pointer;
 }
 
-span.login-checkbox > input[type='checkbox']:checked + label {	
+span.login-checkbox  input[type='checkbox']:checked + label {	
 	background-position: 0 -15px;
 }
 
@@ -136,14 +133,14 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	width: 157px; 
 	display: block;
 	
-	background: url(../../images/signin/twitter_btn.png) no-repeat; 
+	background: url(/images/signin/twitter_btn.png) no-repeat; 
 	
 }
 
 .fb {
 	width: 162px; 
 	
-	background: url(../../images/signin/fb_btn.png) no-repeat; 	
+	background: url(/images/signin/fb_btn.png) no-repeat; 	
 }
 
 .twitter:active, .fb:active {
